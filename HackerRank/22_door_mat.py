@@ -7,3 +7,4 @@ if __name__ == "__main__":
     j = n
     for j in range(n-2, -1, -2):
         print(((".|.")*j).center(m, "-"))
+        
