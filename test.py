@@ -1,144 +1,81 @@
-# class Cell:
-#     def __init__(self):
-#         self.north = True
-#         self.south = True
-#         self.east = True
-#         self.west = True
-
-# rows = 3
-# cols = 3
-
-# grid = [[Cell() for _ in range(cols)] for _ in range(rows)]
-
-# # print(grid)
-
-# def render(grid):
-#     rows = len(grid)
-#     cols = len(grid[0])
-
-#     # top border
-#     print("█" * (cols * 2 + 1))
-
-#     for r in range(rows):
-#         line = "█"
-
-#         for c in range(cols):
-#             cell = grid[r][c]
-
-#             line += " "
-
-#             if cell.east:
-#                 line += "█"
-#             else:
-#                 line += " "
-
-#         print(line)
-
-#         bottom = ""
-
-#         for c in range(cols):
-#             cell = grid[r][c]
-
-#             if cell.south:
-#                 bottom += "██"
-#             else:
-#                 bottom += "█ "
-
-#         print(bottom + "█")
-
-# grid[0][0].east = False
-# grid[0][1].west = False
-
-# grid[0][1].north = False
-# grid[0][1].east = False
-# render(grid)
+# Contains Duplicate
+# Valid Anagram
+# Ransom Note
+# Isomorphic Strings
+# Word Pattern
+# Merge Sorted Array
+# Move Zeroes
+# Remove Duplicates II
+# Squares of a Sorted Array
+# Binary Search
+# Search Insert Position (binary search version)
+# Guess Number Higher or Lower
+# Reverse Linked List
+# Middle of the Linked List
+# Linked List Cycle
+# Delete Duplicates from Sorted List
+# Baseball Game
+# Backspace String Compare
+# Make The String Great
+# Plus One
+# Sqrt(x)
+# Add Binary
+# Fibonacci Number
+# Climbing Stairs
 
 
 
-class Cell:
-    def __init__(self):
-        self.north = True
-        self.south = True
-        self.east = True
-        self.west = True
+# Contains Duplicate
+# Valid Anagram
+# Merge Sorted Array
+# Move Zeroes
+# Reverse Linked List
+# Middle of the Linked List
+# Binary Search
+# Plus One
+# Add Binary
+# Climbing Stairs
 
 
-rows = 3
-cols = 3
 
-grid = [[Cell() for _ in range(cols)] for _ in range(rows)]
+# I don't think you should do these yet
 
-# Open some walls
-grid[0][0].east = False
-grid[0][1].west = False
+# Skip for now:
 
-grid[0][0].south = False
-grid[1][0].north = False
+# Dynamic Programming
+# Graphs
+# Tries
+# Segment Trees
+# Hard tree problems
 
-
-def render(grid):
-    rows = len(grid)
-    cols = len(grid[0])
-
-    # TOP BORDER
-    top = "┌"
-
-    for c in range(cols):
-        top += "───"
-
-        if c == cols - 1:
-            top += "┐"
-        else:
-            top += "┬"
-
-    print(top)
-
-    # CELLS
-    for r in range(rows):
-
-        middle = "│"
-
-        for c in range(cols):
-            cell = grid[r][c]
-
-            middle += "   "
-
-            if cell.east:
-                middle += "│"
-            else:
-                middle += " "
-
-        print(middle)
-
-        # BOTTOM WALLS
-        bottom = ""
-
-        for c in range(cols):
-            cell = grid[r][c]
-
-            if c == 0:
-                if r == rows - 1:
-                    bottom += "└"
-                else:
-                    bottom += "├"
-
-            if cell.south:
-                bottom += "───"
-            else:
-                bottom += "   "
-
-            if c == cols - 1:
-                if r == rows - 1:
-                    bottom += "┘"
-                else:
-                    bottom += "┤"
-            else:
-                if r == rows - 1:
-                    bottom += "┴"
-                else:
-                    bottom += "┼"
-
-        print(bottom)
+# They won't help much for Rank 03.
 
 
-render(grid)
+
+
+
+# ##DONE-------------------------
+# Arrays
+
+# ✔ Two Sum
+# ✔ Remove Duplicates
+# ✔ Remove Element
+# ✔ Search Insert Position
+
+# Strings
+
+# ✔ Roman to Integer
+# ✔ Longest Common Prefix
+# ✔ Find Index of First Occurrence (strStr)
+# ✔ Length of Last Word
+# ✔ Palindrome Number
+
+# Stack
+
+# ✔ Valid Parentheses
+
+# Linked Lists
+
+# ✔ Merge Two Sorted Lists
+# ✔ Dummy nodes
+# ✔ Building linked lists
