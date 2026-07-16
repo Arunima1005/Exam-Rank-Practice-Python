@@ -1,10 +1,10 @@
-# Contains Duplicate
-# Valid Anagram
+# Contains Duplicate----------------------------done
+# Valid Anagram----------------------------------done
 # Ransom Note
 # Isomorphic Strings
 # Word Pattern
-# Merge Sorted Array
-# Move Zeroes
+# Merge Sorted Array ----------------------------done
+# Move Zeroes-------------------------------------done
 # Remove Duplicates II
 # Squares of a Sorted Array
 # Binary Search
@@ -17,24 +17,24 @@
 # Baseball Game
 # Backspace String Compare
 # Make The String Great
-# Plus One
-# Sqrt(x)
-# Add Binary
+# Plus One -----------------------------------done
+# Sqrt(x) ------------------------------------- done
+# Add Binary -----------------------------------done
 # Fibonacci Number
 # Climbing Stairs
 
 
 
-# Contains Duplicate
-# Valid Anagram
-# Merge Sorted Array
-# Move Zeroes
+# Contains Duplicate----------------------------done
+# Valid Anagram--------------------------------done
+# Merge Sorted Array ---------------------------done
+# Move Zeroes --------------------------------done
 # Reverse Linked List
 # Middle of the Linked List
 # Binary Search
-# Plus One
-# Add Binary
-# Climbing Stairs
+# Plus One ---- ---------------------------------done
+# Add Binary ------------------------------------ done
+# Climbing Stairs --------------------------------- done
 
 
 
