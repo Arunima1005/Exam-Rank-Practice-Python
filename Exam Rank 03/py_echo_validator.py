@@ -12,6 +12,18 @@ def echo_validator(text: str) -> bool:
 
 ## new = "".join(c.lower() for c in text if c.isalpha())
 
+
+
+# def echo_validator(text: str) -> bool:
+
+#     if not text:
+#         return False
+    
+#     new = [c.lower() for c in text if c.isalpha()]
+#     return new == new[::-1]
+
+
+
 print(echo_validator("A man a plan a canal Panama"))
 print(echo_validator("racecar"))
 
