@@ -1,3 +1,23 @@
+## using sort and sorted
+
+# def count_vowel(word):
+#     count = 0
+#     for c in word:
+#         if c.lower() in "aeiou":
+#             count += 1
+#     return count
+
+
+# def cryptic_sorter(strings):
+#     return sorted(
+#         strings,
+#         key=lambda s: (
+#             len(s),
+#             s.lower(),
+#             count_vowel(s)
+#         )
+#     )
+
 def count_vowel(word: str) -> int:
     count = 0
     for c in word:
