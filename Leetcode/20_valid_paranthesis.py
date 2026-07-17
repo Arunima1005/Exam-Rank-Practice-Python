@@ -68,8 +68,17 @@ class Solution:
 
 
 s = Solution()
+# print(s.isValid("()"))
+# print(s.isValid("()[]{}"))
+# print(s.isValid("(]"))
+# print(s.isValid("([])"))
+# print(s.isValid("([)]"))
+
 print(s.isValid("()"))
 print(s.isValid("()[]{}"))
 print(s.isValid("(]"))
-print(s.isValid("([])"))
 print(s.isValid("([)]"))
+print(s.isValid("{[]}"))
+print(s.isValid("hello(world)"))
+print(s.isValid("((())"))
+print(s.isValid(""))
