@@ -15,6 +15,10 @@ print(mirror_matrix([[-1,-2],[-3,-4]]))
 # def mirror_matrix(matrix: list[list[int]]) -> list[list[int]]:
 #     return [row[::-1] for row in matrix]
 
+#### Using reverse 
+# for num_lst in matrix:
+    #     num_lst.reverse()
+    # return matrix
 
 
 #### If slicing ([::-1]) was forbidden
