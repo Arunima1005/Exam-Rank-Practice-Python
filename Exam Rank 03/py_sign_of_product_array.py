@@ -13,14 +13,14 @@
 from functools import reduce
 
 # help(reduce)
-
-def signFunc(x):
-    num = reduce(lambda x,y : x * y, x)
-    if num == 0:
-        return 0
-    if num > 0:
-        return 1
-    return -1
+### --- if product value is huge then it will not work
+# def signFunc(x):
+#     num = reduce(lambda x,y : x * y, x)
+#     if num == 0:
+#         return 0
+#     if num > 0:
+#         return 1
+#     return -1
 
 
 # ### only checking sign
