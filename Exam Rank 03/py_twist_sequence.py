@@ -2,9 +2,8 @@ def twist_sequence(arr: list[int], k: int) -> list[int]:
     if not arr:
         return []
     for _ in range(k):
-        arr.insert(0, arr.pop())
+         arr.insert(0, arr.pop())
     return arr
-
 
 
 # twist_sequence([1,2,3,4,5], 2)
