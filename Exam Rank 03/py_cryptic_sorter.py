@@ -14,7 +14,8 @@
 #         key=lambda s: (
 #             len(s),
 #             s.lower(),
-#             count_vowel(s)
+#             count_vowel(s),
+#             s
 #         )
 #     )
 
@@ -44,6 +45,8 @@ def cryptic_sorter(strings: list[str]) -> list[str]:
                 # Rule 3: vowel count
                 elif strings[i].lower() == strings[j].lower():
                     if count_vowel(strings[i]) > count_vowel(strings[j]):
+                        strings[i], strings[j] = strings[j], strings[i]
+                    if strings[i] > strings[j]:
                         strings[i], strings[j] = strings[j], strings[i]
 
     return strings

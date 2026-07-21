@@ -33,3 +33,23 @@ print(whisper_cipher("abc", -3)) #xyz
 #             result.append(ch)
 
 #     return "".join(result)
+
+
+# ## withour ord function
+
+# def whisper_cipher(text: str, shift: int) -> str:
+
+#     alphabet_lower = "abcdefghijklmnopqrstuvwxyz"
+#     alphabet_upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+#     result = ''
+
+#     for char in text:
+
+#         if char.islower():
+#             result += alphabet_lower[(alphabet_lower.index(char) + shift) % 26]
+
+#         elif char.isupper():
+#             result += alphabet_lower[(alphabet_upper.index(char) + shift) % 26]
+#         else:
+#             result += char
+#     return result

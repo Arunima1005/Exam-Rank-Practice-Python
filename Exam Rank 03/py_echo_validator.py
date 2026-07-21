@@ -46,3 +46,11 @@ print(echo_validator(""))
 #             new += c
 
 #     return new == new[::-1]
+
+
+## Using filter...nice one
+# def echo_validator(text: str) -> bool:
+
+#     cleaned = ''.join(filter(str.isalpha, text.lower()))
+
+#     return bool(cleaned) and cleaned == cleaned[::-1]
