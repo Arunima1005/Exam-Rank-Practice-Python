@@ -8,3 +8,5 @@ class Solution:
 
             if n < 0:
                 negatives *= -1
+
+        return negatives
