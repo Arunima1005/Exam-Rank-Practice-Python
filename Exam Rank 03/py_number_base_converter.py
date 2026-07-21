@@ -16,6 +16,12 @@ def number_base_converter(number: str, from_base: int, to_base: int) -> str:
     if not (2 <= from_base <= 36 and 2 <= to_base <= 36):
         return "ERROR"
     decimal = 0
+
+    # for char in number:
+    #     if char not in digits[:from_base]:
+    #         return "ERROR"
+
+
     for n in number.upper():
         if n not in digits:
             return "ERROR"
