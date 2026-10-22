@@ -1,20 +1,39 @@
 def array_rotation_detector(arr1: list, arr2: list) -> bool:
     if len(arr1) != len(arr2):
         return False
-    if arr1 == arr2 == []:
+
+    if not arr1:
         return True
-    for _ in range(len(arr1)):
-        last = arr2.pop()
-        arr2.insert(0,last)
-        if arr1 == arr2:
+
+    for i in range(len(arr1)):
+        rotated = arr1[i:] + arr1[:i]
+        if rotated == arr2:
             return True
+
     return False
+
+
+
+
+
+# def array_rotation_detector(arr1: list, arr2: list) -> bool:
+#     if len(arr1) != len(arr2):
+#         return False
+#     if arr1 == arr2 == []:
+#         return True
+#     for _ in range(len(arr1)):
+#         last = arr2.pop()
+#         arr2.insert(0,last)
+#         if arr1 == arr2:
+#             return True
+#     return False
 
 print(array_rotation_detector([1, 2, 3, 4, 5], [4, 5, 1, 2, 3]))  # Expected: True
 print(array_rotation_detector([1, 2, 3, 4, 5], [5, 1, 2, 3, 4]))  # Expected: True
 print(array_rotation_detector([1, 2, 3], [3, 2, 1]))  # Expected: False
 print(array_rotation_detector([1, 2], [1, 2, 3]))  # Expected: False
 print(array_rotation_detector([], []))  # Expected: True
+
 
 
 

@@ -8,7 +8,6 @@ def sliding_window_maximum(nums: list[int], k: int) -> list[int]:
         result.append(max(n))
     return result
 
-
 print(sliding_window_maximum([1, 3, -1, -3, 5, 3, 6, 7], 3))  # Expected: [3, 3, 5, 5, 6, 7]
 print(sliding_window_maximum([1, 2, 3, 4, 5], 2))  # Expected: [2, 3, 4, 5]
 print(sliding_window_maximum([5, 4, 3, 2, 1], 1))  # Expected: [5, 4, 3, 2, 1]
@@ -16,3 +15,14 @@ print(sliding_window_maximum([1, 2, 3], 3))  # Expected: [3]
 print(sliding_window_maximum([1, 2, 3], 4))  # Expected: []
 print(sliding_window_maximum([], 2))  # Expected: []
 print(sliding_window_maximum([1, 2, 3], 0))  # Expected: []
+
+
+
+# ## ANother
+# def sliding_window_maximum(nums: list[int], k: int) -> list[int]:
+#     if not nums or k <= 0:
+#         return []
+
+#     iterations = len(nums) - k + 1
+
+#     return [max(nums[i:i + k]) for i in range(iterations)]
