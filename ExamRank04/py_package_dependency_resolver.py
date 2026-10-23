@@ -4,44 +4,32 @@ def package_dependency_resolver(
     dependencies_count = {}
     dependents = {package: [] for package in packages}
 
-    # Count only dependencies that exist in the input.
-    for package, dependencies in packages.items():
-        valid_dependencies = [
-            dep for dep in dependencies
-            if dep in packages
-        ]
-        dependencies_count[package] = len(valid_dependencies)
+    for pack, depenedies in packages.items():
+        valid = [dep for dep in depenedies if dep in packages]
+        dependencies_count[pack] = len(valid)
 
-        for dep in valid_dependencies:
-            dependents[dep].append(package)
+        for dep in valid:
+            dependents[dep].append(pack)
 
-    # Start with packages that have no dependencies.
-    ready = sorted(
-        package
-        for package, count in dependencies_count.items()
-        if count == 0
-    )
+    ready = sorted(dep for dep, count in dependencies_count.items() if count == 0)
 
     result = []
-
+    
     while ready:
-        package = ready.pop(0)
-        result.append(package)
+        result.extend(ready)
+        next_ready = []
 
-        # Update packages that depend on the installed package.
-        for dependent in sorted(dependents[package]):
-            dependencies_count[dependent] -= 1
+        for dep in ready:
+            for dependent in dependents[dep]:
+                dependencies_count[dependent] -=1 
 
-            if dependencies_count[dependent] == 0:
-                ready.append(dependent)
+                if dependencies_count[dependent] == 0:
+                    next_ready.append(dependent)
 
-        # Keep the next choice alphabetical.
-        ready.sort()
-
-    # If some packages remain, there is a cycle.
+        ready = sorted(next_ready)    
     if len(result) != len(packages):
-        return []
-
+            return []
+    
     return result
 
 
