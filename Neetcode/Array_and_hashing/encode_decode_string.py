@@ -29,7 +29,7 @@ print(s.decode(s = st))
 st = s.encode(["we","say",":","yes","!@#$%^&*()"])
 print(s.decode(st))
 
-## AI - two pointer approach
+## Using - two pointer approach
 #  def decode(self, s: str) -> List[str]:
 #         result = []
 #         i = 0
@@ -52,7 +52,7 @@ print(s.decode(st))
 #         return result
 
 
-## Usinf Regex 
+## Using Regex 
 
     
     # def decode(self, s: str) ->list[str]:

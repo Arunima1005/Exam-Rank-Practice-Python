@@ -10,7 +10,7 @@ print(s.twoSum(nums = [4,5,6], target = 10))
 print(s.twoSum(nums = [5,5], target = 10))
 print(s.twoSum(nums=[2,5,5,11], target=10))
 
-# ## AI - another approach
+# ## Another approach
 # class Solution:
 #     def twoSum(self, nums: list[int], target: int) -> list[int]:
 #         hashmap = {}

@@ -23,7 +23,7 @@ print(s.isAnagram(s = "x", t = "x"))
 #     def isAnagram(self, s: str, t: str) -> bool:
 #         return sorted(s) == sorted(t)
 
-#     ## Array Approach
+# ## Array Approach
 
 # class Solution:
 #     def isAnagram(self, s: str, t: str) -> bool:

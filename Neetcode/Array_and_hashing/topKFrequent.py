@@ -22,7 +22,7 @@ print(s.topKFrequent(nums = [1,2], k = 2))
 
 
 
-### AI - Nice way
+### Better Approach
 
 # from collections import Counter
 

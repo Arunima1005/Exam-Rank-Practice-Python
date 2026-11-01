@@ -8,7 +8,7 @@ print(s.hasDuplicate([1, 2, 3, 3]))
 print(s.hasDuplicate([1, 2, 3, 4]))
 
 
-## AI - It returns immediately when it encounters a duplicate (early termination), potentially saving work.
+## better approacg - It returns immediately when it encounters a duplicate (early termination), potentially saving work.
 
 # class Solution:
 #     def hasDuplicate(self, nums: list[int]) -> bool:
