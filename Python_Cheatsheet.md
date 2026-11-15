@@ -467,3 +467,61 @@ def outer(a, b):
 
 print(outer("a", "b"))          # abc
 ```
+
+## print - one line
+### Use the end parameter inside your loop
+```
+for n in nums:
+    print(n, end=" ")
+```
+### Use unpacking
+```
+print(*nums)
+or
+print(*nums, sep=", ")
+```
+### Using join() (Best for strings)
+```
+print(" ".join(str(n) for n in nums))
+```
+
+## Iterating Through Adjacent Array Elements
+
+When comparing neighbouring elements, be careful about array boundaries.
+
+### 1. Forward Direction (Current → Next)
+
+Use `j + 1` to access the next element.
+
+```python
+for j in range(len(arr) - 1):
+    if arr[j] + 1 == arr[j + 1]:
+        print("Consecutive")
+```
+
+- Start at index `0`.
+- Stop at `len(arr) - 1` (exclusive).
+- Prevents `IndexError` when accessing `arr[j + 1]`.
+
+### 2. Backward Direction (Previous → Current)
+
+Use `j - 1` to access the previous element.
+
+```python
+for j in range(1, len(arr)):
+    if arr[j] == arr[j - 1] + 1:
+        print("Consecutive")
+```
+
+- Start at index `1`.
+- Continue until the last index.
+- Prevents accidentally accessing `arr[-1]` when comparing the first element.
+
+### Quick Reference
+
+| Direction | Loop |
+|---|---|
+| Forward (`j + 1`) | `range(len(arr) - 1)` |
+| Backward (`j - 1`) | `range(1, len(arr))` |
+
+**Remember:** Forward iteration stops one position early; backward iteration starts one position late.
