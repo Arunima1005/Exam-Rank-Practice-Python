@@ -468,6 +468,7 @@ def outer(a, b):
 print(outer("a", "b"))          # abc
 ```
 
+
 ## print - one line
 ### Use the end parameter inside your loop
 ```
